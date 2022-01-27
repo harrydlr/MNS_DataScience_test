@@ -29,7 +29,7 @@ The data is aggregated weekly, separated by negative and positive transactions, 
 
 It seems appropriate to use MAPE to measure the performance of our model. Although it is difficult to interpret for future results, the use of the M(eDian)APE metric gives us a better idea of the performance. As we can see, comparing the MAPE and the MdPE, the model fails for some types of accounts.
 
-# Future work:
+# Next steps:
 - To compare the results of filling in missing dates using the interpolation method.
 - To apply the ExponentialMovingAverage(last) method proposed in the mentioned paper to treat Unevenly Spaced time series.
 - To explore exhaustively the appropriate parameters for the model.
