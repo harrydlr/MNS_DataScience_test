@@ -7,6 +7,10 @@ In the Notebooks folder you can find a notebook in which we briefly explore the 
 
 The other files correspond to the requested API. The API uses the VAR model (model2.py). In case you want to use the ARIMA model you would have to change "model2" to "model" in the main.py file.
 
+# VAR model Results:
+MdAPE:  0.06
+MAPE:  136.75
+
 # Conclusions:
 
 The most difficult part of this work has been to think how to deal with the Unevenly Spaced time series problem. I studied the paper: "Algorithms for Unevenly Spaced Time Series: Moving Averages and Other Rolling Operators", Eckner (2017). It gave me an overview of the problem and possible solutions as de EMA(last) method.
@@ -27,4 +31,4 @@ It seems appropriate to use MAPE to measure the performance of our model. Althou
 # Future work:
 - To compare the results of filling in missing dates using the interpolation method.
 - To apply the ExponentialMovingAverage(last) method proposed in the mentioned paper to treat Unevenly Spaced time series.
-- To explore exhaustivly the appropriate parameters for the model.
+- To explore exhaustively the appropriate parameters for the model.
