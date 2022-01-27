@@ -7,7 +7,7 @@ In the Notebooks folder you can find a notebook in which we briefly explore the 
 
 The other files correspond to the requested API. The API uses the VAR model (model2.py). In case you want to use the ARIMA model you would have to change "model2" to "model" in the main.py file.
 
-Conclusions:
+# Conclusions:
 
 The most difficult part of this work has been to think how to deal with the Unevenly Spaced time series problem. I studied the paper: "Algorithms for Unevenly Spaced Time Series: Moving Averages and Other Rolling Operators", Eckner (2017). It gave me an overview of the problem and possible solutions as de EMA(last) method.
 
@@ -19,13 +19,12 @@ The use of an ARIMA model was studied but it seemed evident that future negative
 
 The use of Convolutional Neural Networks was also explored but the performance was very poor due to the limited data available for most of the accounts in the dataset.
 
-I therefore decided to implement a Vector Autoregression (VAR) model.
-
+I therefore decided to implement a Vector Autoregression (VAR) model: 
 The data is aggregated weekly, separated by negative and positive transactions, and the account balance.
 
 It seems appropriate to use MAPE to measure the performance of our model. Although it is difficult to interpret for future results, the use of the M(eDian)APE metric gives us a better idea of the performance. As we can see, comparing the MAPE and the MdPE, the model fails for some types of accounts.
 
-Future work remains to be done:
+# Future work:
 - compare the results of filling in missing dates using the interpolation method. 
 - Apply the ExponentialMovingAverage(last) method proposed in the mentioned paper to treat Unevenly Spaced time series.
 - Make an exhaustive exploration of the appropriate parameters for the model.
