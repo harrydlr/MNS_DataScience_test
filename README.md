@@ -13,7 +13,7 @@ The most difficult part of this work has been to think how to deal with the Unev
 
 The application of the interpolation method using the Scipy package was also explored, but having a lot of time series that were not dense I did not find it appropriate to use it. I implemented the code but it remains to compare results.
 
-In the end I opted to fill the missing dates with zeros. Assuming that each entry is a snapshot on a specific date, we can be sure that on the missing dates the transactions had a zero amount. The impact and sense of this approach remains to be studied further.
+In the end, I opted to fill the missing dates with zeros. Assuming that each entry is a snapshot on a specific date, we can be sure that on the missing dates the transactions had a zero amount. The impact and sense of this approach remains to be studied further.
 
 The use of an ARIMA model was studied but it seemed evident that future negative transactions do not depend so much on past values as on the account balance.
 
