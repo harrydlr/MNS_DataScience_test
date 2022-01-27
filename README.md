@@ -8,6 +8,7 @@ In the Notebooks folder you can find a notebook in which we briefly explore the 
 The other files correspond to the requested API. The API uses the VAR model (model2.py). In case you want to use the ARIMA model you would have to change "model2" to "model" in the main.py file.
 
 Conclusions:
+
 The most difficult part of this work has been to think how to deal with the Unevenly Spaced time series problem. I studied the paper: "Algorithms for Unevenly Spaced Time Series: Moving Averages and Other Rolling Operators", Eckner (2017). It gave me an overview of the problem and possible solutions as de EMA(last) method.
 
 The application of the interpolation method using the Scipy package was also explored, but having a lot of time series that were not dense I did not find it appropriate to use it. I implemented the code but it remains to compare results.
