@@ -9,6 +9,7 @@ The other files correspond to the requested API. The API uses the VAR model (mod
 
 # VAR model Results:
 MdAPE:  0.06
+
 MAPE:  136.75
 
 # Conclusions:
