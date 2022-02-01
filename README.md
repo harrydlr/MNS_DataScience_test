@@ -1,11 +1,8 @@
-# MNS_DataScience_test
-This project responds to the Data Science test proposed by M*ns*.
-
-It develops an ARIMA model and a Vector Autoregression (VAR) model to predict the next 30 days expenses of an account.
+This project implements an ARIMA model and a Vector Autoregression (VAR) model to predict the next 30 days expenses of a bank account.
 
 In the Notebooks folder you can find a notebook in which we briefly explore the data, as well as a notebook in which we study the performance of the VAR model using the MdAPE and MAPE metrics.
 
-The other files correspond to the requested API. The API uses the VAR model (model2.py). In case you want to use the ARIMA model you would have to change "model2" to "model" in the main.py file.
+The other files correspond to the fastAPI API. The API uses the VAR model (model2.py). In case you want to use the ARIMA model you would have to change "model2" to "model" in the main.py file.
 
 # VAR model Results:
 MdAPE:  0.06
